@@ -1,6 +1,6 @@
-package fr.esisar.calcultrice.operation;
+package fr.esisar.calculatrice.operation;
 
-import fr.esisar.calcultrice.CalculatriceException;
+import fr.esisar.calculatrice.CalculatriceException;
 
 class Divisertest implements Operation {
 	

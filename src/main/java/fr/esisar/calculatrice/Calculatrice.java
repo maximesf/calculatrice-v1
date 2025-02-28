@@ -1,10 +1,10 @@
-package fr.esisar.calcultrice;
+package fr.esisar.calculatrice;
 
 
 import java.util.HashSet;
 import java.util.Set;
 
-import fr.esisar.calcultrice.operation.Operation;
+import fr.esisar.calculatrice.operation.Operation;
 
 
 public class Calculatrice {

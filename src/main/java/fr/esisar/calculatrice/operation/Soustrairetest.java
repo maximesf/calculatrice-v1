@@ -1,8 +1,10 @@
-package fr.esisar.calcultrice.operation;
+package fr.esisar.calculatrice.operation;
 
-import fr.esisar.calcultrice.CalculatriceException;
+import fr.esisar.calculatrice.CalculatriceException;
 
-public class Soustraire implements Operation {
+class Soustrairetest implements Operation {
+	
+	
 
 	public final String nom = "-";
 	
@@ -10,10 +12,9 @@ public class Soustraire implements Operation {
 	public String getNom() {
 		return nom;
 	}
-
+	
 	@Override
 	public double calculer(Double operande1, Double operande2) throws CalculatriceException {
 		return operande1 - operande2;
 	}
-
 }

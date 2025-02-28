@@ -1,4 +1,4 @@
-package fr.esisar.calcultrice.operation;
+package fr.esisar.calculatrice.operation;
 
 class Multipliertest implements Operation {
 	

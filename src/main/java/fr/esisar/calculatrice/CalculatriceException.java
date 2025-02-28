@@ -1,4 +1,4 @@
-package fr.esisar.calcultrice;
+package fr.esisar.calculatrice;
 
 
 public class CalculatriceException extends Exception {

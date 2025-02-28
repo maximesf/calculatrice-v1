@@ -1,10 +1,10 @@
-package fr.esisar.calcultrice;
+package fr.esisar.calculatrice;
 
 
-import fr.esisar.calcultrice.operation.Ajouter;
-import fr.esisar.calcultrice.operation.Diviser;
-import fr.esisar.calcultrice.operation.Multiplier;
-import fr.esisar.calcultrice.operation.Soustraire;
+import fr.esisar.calculatrice.operation.Ajouter;
+import fr.esisar.calculatrice.operation.Diviser;
+import fr.esisar.calculatrice.operation.Multiplier;
+import fr.esisar.calculatrice.operation.Soustraire;
 
 public class Calculateur {
 	public static void main(String[] Args) {
