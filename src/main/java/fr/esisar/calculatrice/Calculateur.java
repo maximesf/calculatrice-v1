@@ -29,6 +29,14 @@ public class Calculateur {
         mycalc.ajouterOperation(new Ajouter());
         mycalc.ajouterOperation(new Soustraire());
         mycalc.ajouterOperation(new Multiplier());
+        
+        // Ajout de plusieurs fois même opération
+        mycalc.ajouterOperation(new Multiplier());
+        mycalc.ajouterOperation(new Multiplier());
+        mycalc.ajouterOperation(new Multiplier());
+        mycalc.ajouterOperation(new Multiplier());
+        
+        System.out.println("Le nombre d'opérations que contient mycal" + mycalc.getNombreOperation());
 
         System.out.println("CALCULATRICE");
 

@@ -6,7 +6,7 @@ import fr.esisar.calculatrice.CalculatriceException;
  * Classe représentant l'opération de soustraction.
  * Implémente l'interface Operation pour fournir la fonctionnalité de soustraction.
  */
-public class Soustraire implements Operation {
+public class Soustraire extends abstractOperation {
 
     /**
      * Le symbole représentant l'opération de soustraction.

@@ -84,6 +84,13 @@ public class Calculatrice {
 		
 	}
 	
+	/**
+     * Retourne le nombre d'opérations de la calculatrice.
+     */
+	public int getNombreOperation() {
+		return listeOperation.size();
+	}
+	
 	
 	
 }

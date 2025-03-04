@@ -26,4 +26,7 @@ public interface Operation {
      *                                par exemple une division par zéro.
      */
     public double calculer(Double operande1, Double operande2) throws CalculatriceException;
+    
+    
+    
 }

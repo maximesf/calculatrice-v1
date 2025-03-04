@@ -3,7 +3,7 @@ package fr.esisar.calculatrice.operation;
 /**
  * La classe Ajouter implémente l'interface Operation et représente l'opération d'addition.
  */
-public class Ajouter implements Operation {
+public class Ajouter extends abstractOperation {
 
     /**
      * Le symbole représentant l'opération d'addition.
@@ -32,4 +32,5 @@ public class Ajouter implements Operation {
     public double calculer(Double operande1, Double operande2) throws ClassCastException {
         return operande1 + operande2;
     }
+    
 }

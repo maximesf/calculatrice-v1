@@ -6,7 +6,7 @@ import fr.esisar.calculatrice.CalculatriceException;
  * Classe représentant l'opération de division.
  * Implémente l'interface Operation pour fournir la fonctionnalité de division.
  */
-public class Diviser implements Operation {
+public class Diviser extends abstractOperation {
 
     /**
      * Le symbole représentant l'opération de division.
@@ -38,4 +38,5 @@ public class Diviser implements Operation {
         }
         return operande1 / operande2;
     }
+    
 }

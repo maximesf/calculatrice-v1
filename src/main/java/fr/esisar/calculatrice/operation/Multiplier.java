@@ -6,7 +6,7 @@ import fr.esisar.calculatrice.CalculatriceException;
  * Classe représentant l'opération de multiplication.
  * Implémente l'interface Operation pour fournir la fonctionnalité de multiplication.
  */
-public class Multiplier implements Operation {
+public class Multiplier extends abstractOperation {
 
     /**
      * Le symbole représentant l'opération de multiplication.
@@ -35,4 +35,5 @@ public class Multiplier implements Operation {
     public double calculer(Double operande1, Double operande2) throws CalculatriceException {
         return operande1 * operande2;
     }
+    
 }
