@@ -1,0 +1,44 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'23'
+-sourcepath
+'/Users/sita/Desktop/calculatrice-v1-main/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'calculatrice-v1 0.0.1-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'calculatrice-v1 0.0.1-SNAPSHOT API'
+fr.esisar.calculatrice.operation
+fr.esisar.calculatrice
+/Users/sita/Desktop/calculatrice-v1-main/src/main/java/.DS_Store = 1741080299045
+/Users/sita/Desktop/calculatrice-v1-main/src/main/java = 1741080247281
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/constant-values.html = 1741083159254
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/tag-search-index.js = 1741083159284
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/overview-tree.html = 1741083159271
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/module-search-index.js = 1741083159283
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/index.html = 1741083159272
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/package-search-index.js = 1741083159284
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/serialized-form.html = 1741083159256
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/index-all.html = 1741083159289
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/allpackages-index.html = 1741083159283
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/member-search-index.js = 1741083159284
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/overview-summary.html = 1741083159290
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/help-doc.html = 1741083159291
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/element-list = 1741083159240
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/search.html = 1741083159289
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/allclasses-index.html = 1741083159282
+/Users/sita/Desktop/calculatrice-v1-main/target/site/apidocs/type-search-index.js = 1741083159284
