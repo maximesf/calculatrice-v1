@@ -6,23 +6,51 @@ import java.util.Set;
 
 import fr.esisar.calculatrice.operation.Operation;
 
+/**
+ * Classe représentant une calculatrice capable d'effectuer des opérations +,/,-,*
+ * Elle stocke un ensemble d'opérations disponibles et permet d'exécuter un calcul en fonction d'un nom d'opération.
+ * 
+ */
 
 public class Calculatrice {
 
+    
+	/** Ensemble des opérations disponibles dans la calculatrice. */
 	private Set<Operation> listeOperation;
 	
+	 /**
+     * Constructeur initialisant la calculatrice avec un ensemble d'opérations donné.
+     * 
+     * @param listeOperation Ensemble des opérations de la calculatrice
+     */
 	public Calculatrice(Set<Operation> listeOperation) {
 		this.listeOperation = listeOperation;
 	}
+	
+	 /**
+     * Constructeur par défaut initialisant une calculatrice vide (sans opérations).
+     */
 	
 	public Calculatrice() {
 		this.listeOperation = new HashSet<>();
 	}
 	
+	/**
+     * Ajoute une opération à la liste des opérations prises en charge par la calculatrice.
+     * 
+     * @param operation Opération à ajouter.
+     */
+	
 	public void ajouterOperation(Operation operation) {
 		listeOperation.add(operation);
 	}
 	
+	 /**
+     * Recherche une opération dans la liste des opérations disponibles.
+     * 
+     * @param nom Nom de l'opération à rechercher.
+     * @return L'opération correspondante si elle est trouvée, sinon {@code null}.
+     */
 	
 	public Operation chercherOperation(String nom) {
 		
@@ -35,6 +63,15 @@ public class Calculatrice {
 	
     }
 	
+	/**
+     * Effectue un calcul en utilisant l'opération spécifiée.
+     * 
+     * @param nom Nom de l'opération à exécuter (ex: "+", "-", "*", "/").
+     * @param operande1 Première opérande.
+     * @param operande2 Deuxième opérande.
+     * @return Le résultat du calcul.
+     * @throws CalculatriceException Si l'opération demandée est inconnue.
+     */
 	
 	public Double calculer (String nom, Double operande1, Double operande2) throws CalculatriceException {
 		
