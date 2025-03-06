@@ -1,12 +1,13 @@
 package fr.esisar.calculatrice.operations.binaires;
 
 import fr.esisar.calculatrice.CalculatriceException;
+import fr.esisar.calculatrice.operations.OperationBinaire;
 
 /**
  * Classe représentant l'opération de soustraction.
  * Implémente l'interface Operation pour fournir la fonctionnalité de soustraction.
  */
-public class Soustraire extends abstractOperationBinaire {
+public class Soustraire implements OperationBinaire {
 
     /**
      * Le symbole représentant l'opération de soustraction.
@@ -35,4 +36,10 @@ public class Soustraire extends abstractOperationBinaire {
     public double calculer(Double operande1, Double operande2) throws CalculatriceException {
         return operande1 - operande2;
     }
+
+	@Override
+	public double calculer(Double... operandes) throws CalculatriceException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

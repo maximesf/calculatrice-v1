@@ -1,9 +1,12 @@
 package fr.esisar.calculatrice.operations.binaires;
 
+import fr.esisar.calculatrice.CalculatriceException;
+import fr.esisar.calculatrice.operations.OperationBinaire;
+
 /**
  * La classe Ajouter implémente l'interface Operation et représente l'opération d'addition.
  */
-public class Ajouter extends abstractOperationBinaire {
+public class Ajouter implements OperationBinaire {
 
     /**
      * Le symbole représentant l'opération d'addition.
@@ -32,5 +35,11 @@ public class Ajouter extends abstractOperationBinaire {
     public double calculer(Double operande1, Double operande2) throws ClassCastException {
         return operande1 + operande2;
     }
+
+	@Override
+	public double calculer(Double... operandes) throws CalculatriceException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
     
 }
