@@ -2,12 +2,13 @@ package fr.esisar.calculatrice.operations.binaires;
 
 import fr.esisar.calculatrice.CalculatriceException;
 import fr.esisar.calculatrice.operations.OperationBinaire;
+import fr.esisar.calculatrice.operations.abstractOperation;
 
 /**
  * Classe représentant l'opération de division.
  * Implémente l'interface Operation pour fournir la fonctionnalité de division.
  */
-public class Diviser implements OperationBinaire {
+public class Diviser extends abstractOperation implements OperationBinaire {
 
     /**
      * Le symbole représentant l'opération de division.

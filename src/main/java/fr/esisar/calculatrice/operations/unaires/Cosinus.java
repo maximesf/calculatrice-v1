@@ -2,12 +2,13 @@ package fr.esisar.calculatrice.operations.unaires;
 
 import fr.esisar.calculatrice.CalculatriceException;
 import fr.esisar.calculatrice.operations.OperationUnaire;
+import fr.esisar.calculatrice.operations.abstractOperation;
 
 /**
  * La classe {@code Cosinus} implémente l'interface {@code OperationUnaire} et permet de calculer
  * le cosinus d'une valeur.
  */
-public class Cosinus implements OperationUnaire{
+public class Cosinus extends abstractOperation implements OperationUnaire{
 	
 	public final String nom = "cos";
 	
@@ -31,15 +32,24 @@ public class Cosinus implements OperationUnaire{
      * @throws CalculatriceException si une erreur survient lors du calcul.
      */
 	
-    @Override
-    public double calculer(Double operande) throws CalculatriceException {
-        return Math.cos(operande);
-    }
+	@Override
+	public double calculer(Double operande) throws CalculatriceException {
+	    if (operande == null) {
+	        throw new CalculatriceException("Opérande null");
+	    }
+	    return Math.cos(operande);
+	}
 
 	@Override
 	public double calculer(Double... operandes) throws CalculatriceException {
-		// TODO Auto-generated method stub
-		return 0;
+	    if (operandes == null || operandes.length == 0) {
+	        throw new CalculatriceException("Aucun opérande fourni");
+	    }
+	    if (operandes.length != 1) {
+	        throw new CalculatriceException("Il faut un opérande");
+	    }
+	    return Math.cos(operandes[0]);
 	}
+
 
 }

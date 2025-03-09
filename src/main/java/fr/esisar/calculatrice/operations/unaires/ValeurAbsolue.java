@@ -2,12 +2,13 @@ package fr.esisar.calculatrice.operations.unaires;
 
 import fr.esisar.calculatrice.CalculatriceException;
 import fr.esisar.calculatrice.operations.OperationUnaire;
+import fr.esisar.calculatrice.operations.abstractOperation;
 
 /**
  * La classe {@code ValeurAbsolue} implémente l'interface {@code OperationUnaire}.
  * Elle calcule la valeur absolue d'un opérande numérique.
  */
-public class ValeurAbsolue implements OperationUnaire {
+public class ValeurAbsolue extends abstractOperation implements OperationUnaire {
 
     public static final String nom = "abs";
 
@@ -36,7 +37,13 @@ public class ValeurAbsolue implements OperationUnaire {
 
 	@Override
 	public double calculer(Double... operandes) throws CalculatriceException {
-		// TODO Auto-generated method stub
-		return 0;
+
+		if (operandes == null || operandes.length == 0) {
+			throw new CalculatriceException("Aucun opérande fourni");
+		}
+		if (operandes.length != 1) {
+			throw new CalculatriceException("Il faut un opérande");
+		}
+		return Math.abs(operandes[0]);
 	}
 }

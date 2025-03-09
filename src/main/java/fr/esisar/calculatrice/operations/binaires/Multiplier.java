@@ -2,12 +2,13 @@ package fr.esisar.calculatrice.operations.binaires;
 
 import fr.esisar.calculatrice.CalculatriceException;
 import fr.esisar.calculatrice.operations.OperationBinaire;
+import fr.esisar.calculatrice.operations.abstractOperation;
 
 /**
  * Classe représentant l'opération de multiplication.
  * Implémente l'interface Operation pour fournir la fonctionnalité de multiplication.
  */
-public class Multiplier implements OperationBinaire {
+public class Multiplier extends abstractOperation implements OperationBinaire {
 
     /**
      * Le symbole représentant l'opération de multiplication.

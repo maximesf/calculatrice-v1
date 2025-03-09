@@ -2,11 +2,12 @@ package fr.esisar.calculatrice.operations.binaires;
 
 import fr.esisar.calculatrice.CalculatriceException;
 import fr.esisar.calculatrice.operations.OperationBinaire;
+import fr.esisar.calculatrice.operations.abstractOperation;
 
 /**
  * La classe Ajouter implémente l'interface Operation et représente l'opération d'addition.
  */
-public class Ajouter implements OperationBinaire {
+public class Ajouter extends abstractOperation implements OperationBinaire {
 
     /**
      * Le symbole représentant l'opération d'addition.
@@ -49,5 +50,6 @@ public class Ajouter implements OperationBinaire {
         
         return a + b;
 	}
+	
     
 }

@@ -1,6 +1,5 @@
 package fr.esisar.calculatrice;
 
-
 import java.util.Scanner;
 
 import fr.esisar.calculatrice.operations.binaires.Ajouter;
@@ -48,7 +47,7 @@ public class Calculateur {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Entrez une opération (+, -, *, /, cos, sin, tan, abs, max, min) ou 'exit' pour quitter:");
+            System.out.println("Entrez une opération (+, -, *, /, cos, sin, tan, abs, max, min) ou quitter:");
             String operation = scanner.nextLine();
 
             if ("exit".equalsIgnoreCase(operation)) {

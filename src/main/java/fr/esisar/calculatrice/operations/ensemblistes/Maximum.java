@@ -4,6 +4,7 @@ import java.util.Collections;
 
 import fr.esisar.calculatrice.CalculatriceException;
 import fr.esisar.calculatrice.operations.OperationEnsembliste;
+import fr.esisar.calculatrice.operations.abstractOperation;
 
 import java.util.Arrays;
 
@@ -11,7 +12,7 @@ import java.util.Arrays;
  * La classe {@code Maximum} implémente l'interface {@code OperationEnsembliste}
  * et permet de calculer le maximum d'un ensemble de valeurs.
  */
-public class Maximum implements OperationEnsembliste {
+public class Maximum extends abstractOperation implements OperationEnsembliste {
 
     /**
      * Le nom de l'opération, ici "max".

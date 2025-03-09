@@ -2,12 +2,13 @@ package fr.esisar.calculatrice.operations.unaires;
 
 import fr.esisar.calculatrice.CalculatriceException;
 import fr.esisar.calculatrice.operations.OperationUnaire;
+import fr.esisar.calculatrice.operations.abstractOperation;
 
 /**
  * La classe {@code Tangente} implémente l'interface {@code OperationUnaire} et permet de calculer
  * la tangente d'une valeur.
  */
-public class Tangente implements OperationUnaire {
+public class Tangente extends abstractOperation implements OperationUnaire {
     /**
      * Le nom de l'opération
      */
@@ -37,7 +38,13 @@ public class Tangente implements OperationUnaire {
 
 	@Override
 	public double calculer(Double... operandes) throws CalculatriceException {
-		// TODO Auto-generated method stub
-		return 0;
+
+		if (operandes == null || operandes.length == 0) {
+			throw new CalculatriceException("Aucun opérande fourni");
+		}
+		if (operandes.length != 1) {
+			throw new CalculatriceException("Il faut un opérande");
+		}
+		return Math.tan(operandes[0]);
 	}
 }

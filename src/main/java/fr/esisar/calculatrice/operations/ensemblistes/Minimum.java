@@ -5,13 +5,14 @@ import java.util.Collections;
 
 import fr.esisar.calculatrice.CalculatriceException;
 import fr.esisar.calculatrice.operations.OperationEnsembliste;
+import fr.esisar.calculatrice.operations.abstractOperation;
 
-public class Minimum implements OperationEnsembliste {
+public class Minimum extends abstractOperation implements OperationEnsembliste {
 
     /**
      * Le nom de l'opération, ici "max".
      */
-    public final String nom = "max";
+    public final String nom = "min";
 
     /**
      * Retourne le nom de l'opération.
