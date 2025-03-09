@@ -36,17 +36,13 @@ public class Maximum implements OperationEnsembliste {
      * @throws CalculatriceException si aucun opérande n'est fourni.
      */
     @Override
-    public double calculer(Double... operandes) throws CalculatriceException {
+    public double calculer(Double[] operandes) throws CalculatriceException {
         if (operandes == null || operandes.length == 0) {
             throw new CalculatriceException("Aucun opérande fourni");
         }
         // operandes est un tableau !! donc l'ajout direct dans une liste intermédiaire non !
         return Collections.max(Arrays.asList(operandes));
     }
+    
 
-	@Override
-	public double calculer(Double operande1, Double operande2) throws CalculatriceException {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 }

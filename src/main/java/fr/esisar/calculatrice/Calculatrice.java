@@ -46,6 +46,15 @@ public class Calculatrice {
 		listeOperation.add(operation);
 	}
 	
+	/**
+	 * Retire une opération de la liste des opérations prises en charge par la calculatrice.
+	 * 
+	 * @param operation Opération à retirer.
+	 */
+	public void retirerOperation(Operation operation) {
+	    listeOperation.remove(operation);
+	}
+
 	 /**
      * Recherche une opération dans la liste des opérations disponibles.
      * 
@@ -74,14 +83,15 @@ public class Calculatrice {
      * @throws CalculatriceException Si l'opération demandée est inconnue.
      */
 	
-	public Double calculer (String nom, Double operande1, Double operande2) throws CalculatriceException {
+	public Double calculer (String nom, Double... operandes) throws CalculatriceException {
 		
 		Operation operation = chercherOperation(nom);
+		
 		if(operation == null) {
 			throw new CalculatriceException("Opération inconnue");
 		}
 		
-		return operation.calculer(operande1,operande2);
+		return operation.calculer(operandes);
 		
 	}
 	

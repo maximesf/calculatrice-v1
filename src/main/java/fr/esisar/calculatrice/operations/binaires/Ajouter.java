@@ -38,8 +38,16 @@ public class Ajouter implements OperationBinaire {
 
 	@Override
 	public double calculer(Double... operandes) throws CalculatriceException {
-		// TODO Auto-generated method stub
-		return 0;
+		// On vérifie qu'on a bien 2 opérandes
+        if (operandes == null || operandes.length != 2) {
+            throw new CalculatriceException("Il faut 2 opérandes SVP.");
+        }
+
+        // On fait l'opération
+        Double a = operandes[0];
+        Double b = operandes[1];
+        
+        return a + b;
 	}
     
 }
